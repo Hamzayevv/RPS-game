@@ -11,47 +11,77 @@
     />
   </head>
   <body>
-    <div class=" d-flex justify-content-center">
-        <div class="w-75 d-flex flex-column">  
-            <div class="card bg-primary">
-                <div class="card-body text-center">
-                  ROCK PAPER SCISSORS GAME!
-                </div>
-            </div>
-        
-            <div class="d-flex p-5 justify-content-between bg-success">  
-        
-                <div class="card me-3 w-50">
-                    <div class="card-body">
-                      <h5 class="card-title" id = "playername">PLAYER</h5>
-                      <p class="card-text" id="playerpartresult" ></p>
-                      <p class="card-text" id="playerscoretag">score: 0</p>
-                      <img src="./img/paper.jpg" class="card-img-top" id = "playerimg" alt="paper">
-                    </div>
-                </div>
-                <div class="w-50 d-flex justify-content-center">
-                    <img>
-                    <h2>
-                        VS
-                    </h2>
-                </div>
-                <div class="card ms-3 w-50">
-                    <div class="card-body">
-                      <h5 class="card-title" >BOT</h5>
-                      <p class="card-text" id="botpartresult"></p>
-                      <p class="card-text" id = "botscoretag">score: 0</p>
-                      <img src="./img/paper.jpg" class="card-img-top" id="botimg" alt="paper">
-                    </div>
-                </div>
-            </div>
-    
+    <div class="d-flex justify-content-center">
+      <div class="w-75 d-flex flex-column">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <h1>ROCK PAPER SCISSORS GAME!</h1>
+            <p>Please select "R","P" or "s"</p>
+          </div>
         </div>
+
+        <div class="d-flex p-5 justify-content-between bg-success">
+          <div class="card me-3 w-50">
+            <div class="card-body">
+              <h5 class="card-title" id="playername">PLAYER</h5>
+              <p class="card-text" id="playerpartresult"></p>
+              <p class="card-text" id="playerscoretag">score: 0</p>
+              <img
+                src="./img/paper.jpg"
+                class="card-img-top"
+                id="playerimg"
+                alt="paper"
+              />
+            </div>
+          </div>
+          <div class="w-50 d-flex justify-content-center">
+            <img src="./img/versus.png" />
+            <!-- <h2>VS</h2> -->
+          </div>
+          <div class="card ms-3 w-50">
+            <div class="card-body">
+              <h5 class="card-title">BOT</h5>
+              <p class="card-text" id="botpartresult"></p>
+              <p class="card-text" id="botscoretag">score: 0</p>
+              <img
+                src="./img/paper.jpg"
+                class="card-img-top"
+                id="botimg"
+                alt="paper"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center flex-row bg-primary w-50">
+          <div class="d-grid gap-2 d-md-block mx-auto w-50">
+            <button
+              class="btn btn-secondary btn-sm rounded-circle"
+              type="button"
+              id="rock_btn"
+              onclick="returnrock()"
+            >
+              <img src="./img/rock_btn.png" class=" " />
+            </button>
+            <button
+              class="btn btn-secondary rounded-circle"
+              type="button"
+              id="paper_btn"
+              onclick="returnpaper()"
+            >
+              <img src="./img/paper_btn.png" />
+            </button>
+            <button
+              class="btn btn-secondary rounded-circle"
+              type="button"
+              id="sc_btn"
+              onclick="returnsc()"
+            >
+              <img src="./img/sc_btn.png" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-    
-    
-    
   </body>
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
 </html>

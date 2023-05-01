@@ -10,17 +10,21 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body background="./img/test2-bg.jpg">
     <div class="d-flex justify-content-center">
       <div class="w-75 d-flex flex-column">
-        <div class="card bg-primary">
+        <div
+          class="card bg-primary rounded-pill"
+          style="background-image: url(./img/test_bg.jpg)"
+        >
           <div class="card-body text-center">
             <h1>ROCK PAPER SCISSORS GAME!</h1>
-            <p>Please select "R","P" or "s"</p>
+            <p>Please select "R","P","S" or click buttons</p>
           </div>
         </div>
+        <div class="mt-3">score</div>
 
-        <div class="d-flex p-5 justify-content-between bg-success">
+        <div class="d-flex p-5 justify-content-between">
           <div class="card me-3 w-50">
             <div class="card-body">
               <h5 class="card-title" id="playername">PLAYER</h5>
@@ -45,15 +49,15 @@
               <p class="card-text" id="botscoretag">score: 0</p>
               <img
                 src="./img/paper.jpg"
-                class="card-img-top"
+                class="card-img"
                 id="botimg"
                 alt="paper"
               />
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center flex-row bg-primary w-50">
-          <div class="d-grid gap-2 d-md-block mx-auto w-50">
+        <div class="d-flex justify-content-center flex-row m-auto mt-3 w-75">
+          <div class="d-grid gap-2 d-md-block m-auto">
             <button
               class="btn btn-secondary btn-sm rounded-circle"
               type="button"
